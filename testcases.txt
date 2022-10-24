@@ -1,0 +1,3 @@
+g++ test.cpp
+a.exe -a selection_sort 50 rand
+a.exe -a selection_sort huy rand

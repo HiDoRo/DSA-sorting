@@ -1,3 +1,7 @@
-g++ test.cpp
-a.exe -a selection_sort 50 rand
-a.exe -a selection_sort huy rand
+g++ main.cpp
+CMD1:
+a.exe -a selection_sort input.txt time
+CMD2:
+a.exe -a selection-sort 50 -rand -time
+CMD3:
+a.exe -a selection_sort 1000 -time

@@ -4,13 +4,13 @@
 #include <fstream>
 using namespace std;
 int datatypehandler(string datatype) {
-    if (datatype == "rand") {
+    if (datatype == "-rand") {
         return 0;
-    } else if (datatype == "sorted") {
+    } else if (datatype == "-sorted") {
         return 1;
-    } else if (datatype == "rev") {
+    } else if (datatype == "-rev") {
         return 2;
-    } else if (datatype == "nsorted") {
+    } else if (datatype == "-nsorted") {
         return 3;
     } else {
         return -1;

@@ -1,7 +1,7 @@
 g++ main.cpp
 CMD1:
-a.exe -a selection_sort input.txt time
+a.exe -a selection-sort input.txt time
 CMD2:
-a.exe -a selection-sort 50 -rand -time
+a.exe -a selection-sort 20 -rand -time
 CMD3:
-a.exe -a selection_sort 1000 -time
+a.exe -a selection-sort 20 -time

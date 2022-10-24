@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     if (count>=2) //have input arg
     {
         mode=argv[1];
-        if (mode=="-a")
+        if (mode=="-a") // ALGO MODE
         {
             
             
@@ -35,7 +35,8 @@ int main(int argc, char const *argv[])
                 {
                     cout<<a[i]<<" ";
                 }
-                cout<<"\n"<<outpara; //just for testing
+                //cout<<"\n"<<outpara; //just for testing
+                cout<<"cmd 2";
             }
             else if(count==5) //cmd 1,3 with 5 arg
             {   string sortalgo=argv[2];
@@ -65,10 +66,7 @@ int main(int argc, char const *argv[])
                     string filename=datasize;
                     filehandler(filename,a,n);
                     m[sortalgo](a,n);
-                    for (int i = 0; i < n; i++)
-                    {
-                        cout<<a[i]<<" ";
-                    }
+                    printarray(a,n);
                     cout<<"cmd1"; //just for testing
                 }
                 
@@ -81,7 +79,7 @@ int main(int argc, char const *argv[])
            
         }
         
-        else if(mode== "-c")
+        else if(mode== "-c") //COMPARISON MODE
         {
             cout<<"c mode activated"<<endl;
             // comparison mode is not completed yet, will do it later

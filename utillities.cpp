@@ -34,3 +34,10 @@ void filehandler(string filename, int a[], int& n) {
     }
     myfile.close();
 }
+
+void printarray(int a[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+    }
+    cout << endl;
+}

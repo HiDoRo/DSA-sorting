@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
 #include <string>
-#include <fstream>
+
 #include "DataGenerator.cpp"
 #include "utillities.cpp"
 #include "sorting_algo.cpp"
@@ -47,7 +47,15 @@ int main(int argc, char const *argv[])
                 }
                 else
                 {
-                    //as this is not a number, so it is cmd1, and datasize is actually input file name
+                    int n;
+                    int a[100000];
+                    string filename=datasize;
+                    filehandler(filename,a,n);
+                    m[sortalgo](a,n);
+                    for (int i = 0; i < n; i++)
+                    {
+                        cout<<a[i]<<" ";
+                    }
                     cout<<"cmd1";
                 }
                 

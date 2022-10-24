@@ -25,7 +25,7 @@ bool numberChecker(string s) {
     return true;
 }
 
-void filehandler(string filename, int a[], int n) {
+void filehandler(string filename, int a[], int& n) {
     ifstream myfile;
     myfile.open(filename);
     myfile >> n;
